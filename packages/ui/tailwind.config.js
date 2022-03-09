@@ -1,8 +1,7 @@
 module.exports = {
-	presets: [require('../../tailwind-workspace-preset.js')],
-	content: ['./src/**/*.{js,ts,jsx,tsx}'],
+	content: ['./src/**/*.{js,ts,jsx,tsx}', './.storybook/preview.js'],
 	theme: {
 		extend: {},
 	},
-	plugins: [],
+	plugins: [require('@tailwindcss/typography'), require('@tailwindcss/forms'), require('tailwindcss-debug-screens')],
 };

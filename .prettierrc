@@ -11,5 +11,5 @@
 	"bracketSameLine": true,
 	"arrowParens": "always",
 	"plugins": ["prettier-plugin-tailwindcss"],
-	"tailwindConfig": "./tailwind-workspace-preset.js"
+	"tailwindConfig": "./packages/ui/tailwind.config.js"
 }

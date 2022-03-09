@@ -10,5 +10,11 @@ module.exports = {
 	// extended assertions to Jest
 	setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
 
-	testPathIgnorePatterns: ['<rootDir>/lib/', '<rootDir>/node_modules/', '<rootDir>/.storybook/'],
+	testPathIgnorePatterns: [
+		'<rootDir>/lib/',
+		'<rootDir>/node_modules/',
+		'<rootDir>/.storybook/',
+		'<rootDir>/cypress/',
+		'<rootDir>/.scannerwork/',
+	],
 };

@@ -1,3 +1,3 @@
-import 'tailwindcss/tailwind.css';
+import './styles/globals.css';
 
 export * from './lib';
