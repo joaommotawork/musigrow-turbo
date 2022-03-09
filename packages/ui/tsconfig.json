@@ -1,5 +1,36 @@
 {
   "extends": "tsconfig/ui-library.json",
+  "compilerOptions": {
+		"jsx": "react-jsx",
+		"allowJs": true,
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"forceConsistentCasingInFileNames": true,
+		"strict": true,
+		"noImplicitOverride": true,
+		"noPropertyAccessFromIndexSignature": true,
+		"noImplicitReturns": true,
+		"noFallthroughCasesInSwitch": true,
+		"baseUrl": ".",
+		"paths": {
+			"@atoms/*": ["src/lib/atoms/*"],
+			"@molecules/*": ["src/lib/molecules/*"],
+			"@organisms/*": ["src/lib/organisms/*"],
+			"@hooks/*": ["src/hooks/*"],
+			"@types/*": ["src/types/*"],
+			"@utils/*": ["src/utils/*"],
+			"@constants/*": ["src/constants/*"]
+		}
+	},
+	"paths": {
+		"@atoms/*": ["src/lib/atoms/*"],
+		"@molecules/*": ["src/lib/molecules/*"],
+		"@organisms/*": ["src/lib/organisms/*"],
+		"@hooks/*": ["src/hooks/*"],
+		"@types/*": ["src/types/*"],
+		"@utils/*": ["src/utils/*"],
+		"@constants/*": ["src/constants/*"]
+	},
   "include": ["src"],
 	"exclude": ["node_modules", "lib"]
 }
